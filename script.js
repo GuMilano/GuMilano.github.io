@@ -17,13 +17,11 @@ function toggleMode(){
      } else{
     // se tiver sem light mode, manter  a imagem normal
         img.setAttribute('src','./assets/avatar.png')
-
      } 
-     const transitionDuration = 1000;
 
+     const transitionDuration = 1000;
      document.body.addEventListener('click', function() {
        document.body.classList.toggle('dark');
-     
        // Altera a duração da transição
        document.body.style.transitionDuration = `${transitionDuration}ms`;
      });
